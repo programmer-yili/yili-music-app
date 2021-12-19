@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yili_music_app/api/hello.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,11 +30,22 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
+  String message = '依力音乐盒';
+
   void _incrementCounter() {
     setState(() {
       _counter++;
     });
   }
+
+  void _fetchData() {
+    sayHello().then((value) => {
+    setState((){ message = value; })
+    });
+  }
+
+  final ButtonStyle buttonStyle =
+  ElevatedButton.styleFrom(textStyle: const TextStyle(fontSize: 20));
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +57,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child:  Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Text(message, style: Theme.of(context).textTheme.headline5),
+            ElevatedButton(
+              style: buttonStyle,
+              onPressed: _fetchData,
+              child: const Text('请求数据'),
+            ),
+            const SizedBox(height: 30),
             const Text(
               '你已经点击次数为：',
             ),
