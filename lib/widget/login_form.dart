@@ -79,7 +79,9 @@ class _loginFormState extends State<LoginForm> {
           FractionallySizedBox(
             widthFactor: 1,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/');
+              },
               child: const Text("登录"),
             ),
           ),
