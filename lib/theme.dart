@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-
 const int _bluePrimaryValue = 0xFF0041C4;
-
 
 const MaterialColor primary = MaterialColor(
   _bluePrimaryValue,
@@ -19,7 +17,6 @@ const MaterialColor primary = MaterialColor(
     900: Color(0xFF00189A),
   },
 );
-
 
 const TabBarTheme tabBarTheme = TabBarTheme(
   labelColor: primary,
