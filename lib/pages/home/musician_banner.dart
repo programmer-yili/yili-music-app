@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:yili_music_app/theme.dart';
-
-import 'musician_card.dart';
+import 'package:yili_music_app/pages/home/musician_card.dart';
+import 'package:yili_music_app/widgets/header_section.dart';
+import 'package:yili_music_app/widgets/scrollable_section.dart';
 
 class MusicianBanner extends StatelessWidget {
   const MusicianBanner({Key? key, required this.title}) : super(key: key);
@@ -11,53 +11,26 @@ class MusicianBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Container(
-          padding: const EdgeInsets.only(left: 25, right: 25),
-          margin: const EdgeInsets.only(bottom: 20),
-          child: Row(
-            children: <Widget>[
-              Text(
-                title,
-                style: const TextStyle(
-                  fontSize: 22,
-                  color: Color(0xFF002150),
-                ),
-              ),
-              Spacer(),
-              Text(
-                "更多",
-                style: const TextStyle(fontSize: 14, color: primary),
-              )
-            ],
-          ),
-        ),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          padding: const EdgeInsets.only(left: 25),
-          child: Row(
-            children: const <Widget>[
-              MusicianCard(
-                  name: "蕾哈娜",
-                  photo: "assets/images/musician-photo.png",
-                  category: "流行音乐"),
-              MusicianCard(
-                  name: "蕾哈娜",
-                  photo: "assets/images/musician-photo.png",
-                  category: "流行音乐"),
-              MusicianCard(
-                  name: "蕾哈娜",
-                  photo: "assets/images/musician-photo.png",
-                  category: "流行音乐"),
-              MusicianCard(
-                  name: "蕾哈娜",
-                  photo: "assets/images/musician-photo.png",
-                  category: "流行音乐"),
-              MusicianCard(
-                  name: "蕾哈娜",
-                  photo: "assets/images/musician-photo.png",
-                  category: "流行音乐")
-            ],
-          ),
+        HeaderSection(title: title),
+        ScrollableSection(
+          children: <Widget>[
+            MusicianCard(
+                name: "蕾哈娜",
+                photo: "assets/images/musician-photo.png",
+                category: "流行音乐"),
+            MusicianCard(
+                name: "蕾哈娜",
+                photo: "assets/images/musician-photo.png",
+                category: "流行音乐"),
+            MusicianCard(
+                name: "蕾哈娜",
+                photo: "assets/images/musician-photo.png",
+                category: "流行音乐"),
+            MusicianCard(
+                name: "蕾哈娜",
+                photo: "assets/images/musician-photo.png",
+                category: "流行音乐")
+          ],
         )
       ],
     );
