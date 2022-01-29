@@ -25,9 +25,14 @@ class HeaderSection extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          const Text(
-            "更多",
-            style: TextStyle(fontSize: 14, color: primary),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/login');
+            },
+            child: const Text(
+              "更多",
+              style: TextStyle(fontSize: 14, color: primary),
+            ),
           )
         ],
       ),

@@ -60,7 +60,9 @@ class NotificationArea extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
                             IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/login');
+                                },
                                 icon:
                                     SvgPicture.asset('assets/icons/bell.svg')),
                             const SizedBox(
