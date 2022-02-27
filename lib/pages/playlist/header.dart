@@ -3,9 +3,12 @@ import 'package:flutter_svg/svg.dart';
 import 'package:yili_music_app/theme.dart';
 
 class Header extends StatelessWidget {
-  const Header({
-    Key? key,
-  }) : super(key: key);
+  const Header({Key? key, required this.name, required this.description})
+      : super(key: key);
+
+  final String name;
+
+  final String description;
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +26,15 @@ class Header extends StatelessWidget {
           ),
           Container(
             margin: const EdgeInsets.only(bottom: 10),
-            child: const Text("全球100佳音乐歌单",
-                style: TextStyle(
+            child: Text(name,
+                style: const TextStyle(
                   fontSize: 18,
                   color: primaryTextColor,
                 )),
           ),
-          const Text(
-            "一些难忘的节奏",
-            style: TextStyle(fontSize: 12, color: secondaryTextColor),
+          Text(
+            description,
+            style: const TextStyle(fontSize: 12, color: secondaryTextColor),
           )
         ],
       ),

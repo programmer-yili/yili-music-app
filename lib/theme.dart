@@ -33,3 +33,5 @@ const TextStyle primaryText = TextStyle(
 
 const TextStyle secondaryText =
     TextStyle(color: Color(0xFF7A869A), fontSize: 12);
+
+const Color btnSecondaryColor = Color(0xFFE5ECF9);
