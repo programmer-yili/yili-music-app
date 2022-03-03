@@ -5,7 +5,8 @@ import 'package:http/http.dart' as http;
 class RequestUtil {
   static RequestUtil? _instance;
 
-  static const String baseUrl = 'http://127.0.0.1:8080';
+  static const String baseUrl =
+      'https://yili-music-1479251-1308655658.ap-shanghai.run.tcloudbase.com';
 
   RequestUtil._internal() {
     _instance = this;
