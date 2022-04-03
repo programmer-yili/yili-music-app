@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="36px" viewBox="0 0 35 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Component/Tab Bar/Item/Active</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34.84" height="35.1" rx="9.48648624"></rect>
+        <filter x="-4.3%" y="-4.3%" width="108.6%" height="108.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-98.000000, -169.000000)">
+            <g id="Component/Tab-Bar/Item/Active" transform="translate(98.000000, 169.000000)">
+                <g id="Rectangle" opacity="0.800000012">
+                    <use fill="#F2F4F7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Component/Icon/Home" transform="translate(8.040000, 7.200000)" fill="#0041C4">
+                    <path d="M6.00965876,2.475 C6.35054483,2.475 6.67610075,2.61771613 6.90845151,2.8690098 L9.47394733,5.6436634 C9.55139758,5.72742796 9.65991622,5.775 9.77354491,5.775 L18.425,5.775 C18.6511299,5.775 18.8344444,5.95968254 18.8344444,6.1875 L18.8344444,15.2625 C18.8344444,16.8572222 17.5512428,18.15 15.9683333,18.15 L4.50388889,18.15 C2.92097943,18.15 1.63777778,16.8572222 1.63777778,15.2625 L1.63777778,5.06299438 C1.63777778,3.63368455 2.78787948,2.475 4.20660183,2.475 L6.00965876,2.475 Z M16.3777778,3.3 C17.4594362,3.3 18.3778222,4.0042694 18.7057984,4.98248336 C18.6156156,4.96123661 18.5216103,4.95 18.425,4.95 L9.95170625,4.95 L8.42608586,3.3 L16.3777778,3.3 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

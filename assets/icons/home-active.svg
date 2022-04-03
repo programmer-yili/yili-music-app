@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="36px" viewBox="0 0 35 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Component/Tab Bar/Item/Active</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="34.84" height="35.1" rx="9.48648624"></rect>
+        <filter x="-4.3%" y="-4.3%" width="108.6%" height="108.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-98.000000, -49.000000)">
+            <g id="Component/Tab-Bar/Item/Active" transform="translate(98.000000, 49.000000)">
+                <g id="Rectangle" opacity="0.800000012">
+                    <use fill="#F2F4F7" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Component/Icon/Home" transform="translate(8.040000, 7.200000)">
+                    <path d="M9.51470899,13.4357143 C8.6101893,13.4357143 7.87693122,14.1744444 7.87693122,15.0857143 L7.87693122,17.6 C7.87693122,17.9037566 8.12135058,18.15 8.42285714,18.15 L11.2304762,18.15 C11.5319828,18.15 11.7764021,17.9037566 11.7764021,17.6 L11.7764021,15.0857143 C11.7764021,14.1744444 11.043144,13.4357143 10.1386243,13.4357143 L9.51470899,13.4357143 Z" id="Path" fill="#00B3F3"></path>
+                    <path d="M12.5562963,17.6647059 L12.5562963,15.0764706 C12.5562963,13.7363679 11.3403453,12.65 10.0101704,12.65 L9.64316293,12.65 C8.31298799,12.65 7.09703704,13.7363679 7.09703704,15.0764706 L7.09703704,17.6647059 C7.09703704,17.8348672 7.12601326,17.9982102 7.1792658,18.15 L5.973075,18.15 C4.64290006,18.15 3.56458021,17.0636321 3.56458021,15.7235294 L3.56458021,8.30035811 L2.43668432,9.29463281 C2.23647259,9.47112557 1.93215319,9.45068619 1.75696793,9.24898018 C1.58178266,9.04727416 1.60207062,8.74068348 1.80228235,8.56419072 L9.50946568,1.77007307 C9.69107871,1.60997564 9.96225462,1.60997564 10.1438677,1.77007307 L17.851051,8.56419072 C18.0512627,8.74068348 18.0715507,9.04727416 17.8963654,9.24898018 C17.7211801,9.45068619 17.4168607,9.47112557 17.216649,9.29463281 L16.0887531,8.30035811 L16.0887531,15.7235294 C16.0887531,17.0636321 15.0104333,18.15 13.6802583,18.15 L12.4740675,18.15 C12.5273201,17.9982102 12.5562963,17.8348672 12.5562963,17.6647059 Z" id="Path" fill="#0041C4"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
